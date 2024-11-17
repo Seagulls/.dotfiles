@@ -12,8 +12,8 @@ export LANG='en_US.UTF-8'
 
 # Desktop related variables
 export XDG_SESSION_TYPE=wayland
-export XDG_SESSION_DESKTOP=sway
-export XDG_CURRENT_DESKTOP=sway
+export XDG_SESSION_DESKTOP=GNOME
+export XDG_CURRENT_DESKTOP=GNOME
 
 # Home directories
 set -a
