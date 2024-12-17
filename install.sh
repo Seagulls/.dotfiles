@@ -38,7 +38,7 @@ link ".config/fontconfig"
 link ".config/gtk-3.0"
 link ".config/dunst"
 link ".config/wezterm"
-link ".config/sway"
+#link ".config/sway"
 link ".config/zsh"
 link ".config/gdb"
 link ".config/git"
@@ -86,9 +86,9 @@ chattr +C "$XDG_CONFIG_HOME/chromium"
 rustup default stable
 
 current_user="$(whoami)"
-if [ "$current_user" != "shellcode" ]; then
+if [ "$current_user" != "guy" ]; then
   # Change my username by your own
-  grep -rl shellcode --exclude install.sh --exclude-dir .git | xargs sed -i "s/shellcode/$current_user/g"
+  grep -rl guy --exclude install.sh --exclude-dir .git | xargs sed -i "s/guy/$current_user/g"
 
   # Remove my git config, create your own if needed
   rm .config/git/config
